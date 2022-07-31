@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AirBnB</title>
+        
+        <style>
+            
+        </style>
+    
+    </head>
+
+
+    <body>
+        <h2 style="color:#2AC1BC">배달의 민족</h2>
+
+        <form>
+            <label for="username">아이디</label>
+            <br>
+            <input type="text" id="username" name="username">
+            <br><br>
+            <label for="pwd">비밀번호</label>
+            <br>
+            <input type="password" id="pwd" name="pwd">
+            <br><br>
+            <input type="submit" value="로그인">
+            <br><br>
+        </form>
+
+        <form>
+            <label for="name">성함:</label>
+            <input type="text" id="name" name="name" value="김영호">
+            <br><br>
+
+            <label for="contact">연락처:</label>
+            <input type="text" id="contact" name="contact" value="010-2763-6023">
+
+            <br><br><br>
+            
+            <input type="radio" id="egg" name="egg" value="계란">
+            <label for="egg">계란</label><br>
+
+            <input type="radio" id="bacon" name="bacon" value="베이컨">
+            <label for="bacon">베이컨</label><br>
+
+            <input type="radio" id="tomato" name="tomato" value="토마토">
+            <label for="tomato">토마토</label><br><br>
+
+
+            <input type="checkbox" id="a" name="a" value="a">
+            <label for="a">양상추 토핑 추가</label><br>
+
+            <input type="checkbox" id="b" name="b" value="b">
+            <label for="b">할라피뇨 토핑 추가</label><br>
+
+            <input type="checkbox" id="c" name="c" value="c">
+            <label for="c">로제떡볶이</label><br>
+
+            <br><br>
+            <label for="topping">토핑을 고르세요</label>
+            <select id="topping" name="topping">
+                <option value="Bacon">베이컨</option>
+                <option value="Lettuce">양상추</option>
+                <option value="Tomato">토마토</option>
+                <option value="Rose">로제</option>
+            </select>
+            <br>
+            <label for="topping">토핑을 고르세요</label>
+            <br><br>
+            <select style="width:25%" id="topping" name="topping" size="3">
+                <option value="Bacon">베이컨</option>
+                <option value="Lettuce">양상추</option>
+                <option value="Tomato">토마토</option>
+                <option value="Rose">로제</option>
+            </select>
+            <br><br>
+
+            <br><br>
+            <select style="width:25%" id="topping" name="topping" size="4" multiple>
+                <option value="Bacon">베이컨</option>
+                <option value="Lettuce">양상추</option>
+                <option value="Tomato">토마토</option>
+                <option value="Rose">로제</option>
+            </select>
+            <br><br>
+
+            <input list="toppings" name="topping">
+            <datalist id="toppings">
+                <option value="Bacon">
+                <option value="Lettuce">
+                <option value="Tomato">
+                <option value="Rose">
+            </datalist>
+            <br><br>
+
+            <fieldset>
+                <legend>주문시 부탁 작성</legend>
+
+                <textarea name="message" rows="10" cols="20">천천히 와주세요. 감사합니다 ;)</textarea>
+            </fieldset>
+
+            <!-- <input style="background-color:#2AC1BC" type="submit" value="제출">
+ -->        
+            <br>
+            <button style="background-color:#2AC1BC" type="button" onclick="alert('주문이 완료되었습니다.')"> 주문하기</button>
+
+
+        </form>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100
+            <br>
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" name="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
+        
+    </body>
+
+</html>

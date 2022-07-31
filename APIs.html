@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AirBnB</title>
+        
+        <style>
+            #div1 {
+                width:350px;
+                height:120px;
+                padding:10px;
+                border: 2px solid #aaaaaa;
+            }
+        </style>
+    
+    </head>
+
+
+    <body>
+        <p>Click the button to get your coordinates. 아래 버튼을 클릭하여 현재위치를 확인해보세요.</p>
+
+        <button onclick="getLocation()">위치 확인하기</button>
+
+        <p id="demo"></p>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="drag1" src="/Users/mac/Documents/GitHub/frontend-lecture/html pro/지코10.jpg" draggable="true" ondragstart="drag(event)" width="330" height="100">
+        </div>
+        <br>
+        
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+
+
+
+        <script>
+            var x= document.getElementById("demo");
+
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + "<br> Longitude: " + position.coords.longitude;
+            }
+        </script>
+
+
+    </body>
+
+</html>
