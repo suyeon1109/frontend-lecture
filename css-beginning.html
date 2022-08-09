@@ -17,10 +17,61 @@
             padding: 70px;
             border: 1px solid #000000;
         }
+
+        /*
+        block: h1~h6, div, p, form -- 화면 전체를 감싸는 블록을 형성
+        inline: a,img,span - 하나에 딱 붙어서 사는 태그들
+        */
             
         .margin {
             margin-bottom: 70px;
             border: 1px solid #000000;
+        }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            display: inline;
+        }
+        h2 {
+            text-shadow: 0px 0px 3px rgb(190, 255, 86);
+            text-align: left;
+        }
+        h3 {
+            text-shadow: 0px 0px 3px red, 0 0 5px blue;
+            text-align: right;
+        }
+        .justify {
+            text-indent: 50px;
+            /* border: 1px solid black; */
+            padding: 10px;
+            width: 30%;
+            /* height: 200px; */
+            text-align: justify;
+            float: left;
+            word-spacing: 10px;
+        }
+
+        .justify2 {
+            text-indent: 50px;
+            /* border: 1px solid black; */
+            padding: 10px;
+            width: 30%;
+            /* height: 300px; */
+            text-align: justify;
+            float: left;
+            letter-spacing: -1px;
+        }
+
+        .justify3 {
+            text-indent: 50px;
+            /* border: 1px solid black; */
+            padding: 10px;
+            width: 30%;
+            /* height: 300px; */
+            text-align: justify;
+            float: left;
+            line-height: 1.5;
         }
     </style>
 
@@ -38,6 +89,22 @@
             이것은 패딩 70px 입니다.
         </div>
 
+        <h1>Heading 1 (center)</h1>
+        <h2>Heading 2 (left)</h2>
+        <h3>Heading 3 (right)</h3>
+
+        <div class="justify">
+            BLACKPINK WORLD TOUR [BORN PINK] SCHEDULE ANNOUNCEMENT Official world tour website ▶https://blackpinkofficial.com/worldtourbornpink/ #BLACKPINK #블랙핑크 #WORLDTOUR #BORNPINK #SCHEDULE #ANNOUNCEMENT #YG
+
+        </div>
+
+        <div class="justify2">
+            현재 국제사회와 과학계가 전 세계적 생물다양성 위기에 관해 협의한 결론은 “멸종위기종, 특히 소규모 지리구의 고유종을 위한 지원 및 급격한 전환"이 필요하다는 것임. 듀크대 스튜어트 핌 교수는(*한 명은 좀 약하다) 현재 생물의 멸종 속도가 1천-1만배까지 빨라졌으며, 곧 공룡 멸종에 버금가는 ‘대멸종’이 일어날 수 있다고 발표함.
+        </div>
+
+        <div class="justify3">
+            현재 국제사회와 과학계가 전 세계적 생물다양성 위기에 관해 협의한 결론은 “멸종위기종, 특히 소규모 지리구의 고유종을 위한 지원 및 급격한 전환"이 필요하다는 것임. 듀크대 스튜어트 핌 교수는(*한 명은 좀 약하다) 현재 생물의 멸종 속도가 1천-1만배까지 빨라졌으며, 곧 공룡 멸종에 버금가는 ‘대멸종’이 일어날 수 있다고 발표함.
+        </div>
     </body>
 
 </html>
