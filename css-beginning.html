@@ -70,14 +70,126 @@
             width: 30%;
             /* height: 300px; */
             text-align: justify;
-            float: left;
+            /* float: left; */
             line-height: 1.5;
+        }
+        div.static {
+            position: static;
+            border: 3px solid black;
+        }
+        div.relative {
+            position: relative;
+            left: 30px;
+            right: 30px;
+            width: 400px;
+            height: 200px;
+            top: 30px;
+            border: 3px dotted black;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            width: 100px;
+            height: 200px;
+            border: 3px solid blue;
+        }
+
+        /* div.fixed {
+            position: fixed;
+            top: 0;
+            left: 10;
+        } */
+
+        div.sticky1 {
+            color: black;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 15px;
+            margin-top: 7px;
+        }
+        div.sticky2 {
+            color: black;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            margin-top: 7px;
+        }
+        div.sticky3 {
+            color: black;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            padding: 15px;
+            margin-top: 7px;
+        }
+        div.sticky4 {
+            color: black;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            right: 0;
+            padding: 15px;
+            margin-top: 7px;
+        }
+        div.sticky5 {
+            color: black;
+            position: -webkit-sticky;
+            position: sticky;
+            text-align: center;
+            padding: 15px;
+            margin-top: 7px;
         }
     </style>
 
 
     <body>
-        <h2>CSS Margins / Paddings</h2>
+        <img src="/Users/mac/Documents/GitHub/frontend-lecture/css-pro/백현5.jpg">
+        
+        <div class="sticky1">Top Left</div>
+        <div class="sticky2">Top Right</div>
+        <div class="sticky5">Centered</div>
+        <div class="sticky3">Bottom Left</div>
+        <div class="sticky4">Bottom Right</div>
+        
+
+        
+        
+        
+        <!-- <h2>CSS Margins / Paddings</h2>
+
+        <div style="padding-bottom: 2000px">
+            <div class="static">
+                This div element has position: static;
+            </div>
+    
+            <br>
+    
+            <div class="relative">
+                This div element has position: relative;
+                <div class="absolute">
+                    This div element has position: relative;
+                </div>
+            </div> -->
+            
+    
+            <!--
+                position 속성들 정리
+                - static: element를 문서 흐름에 맞추어 배치
+                - relative: 이 전 요소에 자연스럽게 연결하여 위치를 지정
+                - absolute: 원하는 위치에 지정해서 배치
+                - fixed: 지정한 위치에 고정시켜서 배치
+                -sticky: 위치에 따라서 동작방식이 달라짐. 요소가 임계점(scroll box 기준) 이전엔 relative와 같이 동작.
+                그 이후에는 fixed처럼 동작을 함.
+            -->
+        <!--
+        </div>
+
+        
         
         <div class="margin">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -105,6 +217,14 @@
         <div class="justify3">
             현재 국제사회와 과학계가 전 세계적 생물다양성 위기에 관해 협의한 결론은 “멸종위기종, 특히 소규모 지리구의 고유종을 위한 지원 및 급격한 전환"이 필요하다는 것임. 듀크대 스튜어트 핌 교수는(*한 명은 좀 약하다) 현재 생물의 멸종 속도가 1천-1만배까지 빨라졌으며, 곧 공룡 멸종에 버금가는 ‘대멸종’이 일어날 수 있다고 발표함.
         </div>
+
+        <br>
+        <br> -->
+
+        <!-- <div class="sticky">
+            상품 구매하기
+        </div> -->
+
     </body>
 
 </html>
